@@ -48,20 +48,43 @@ MIDDLEWARE = [
 
 SITE_ID = 1
 
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
 
 CORS_ORIGIN_WHITELIST = [
-
+    "https://backend-profile.vercel.app"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:5173',
+    "https://backend-profile.vercel.app"
 
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    "https://backend-profile.vercel.app"
 ]
 
+SESSION_COOKIE_DOMAIN = "https://backend-profile.vercel.app"
+
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_BROWSER_XSS_FILTER = True
+
+SECURE_HSTS_SECONDS = 3600
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
 
 ROOT_URLCONF = 'core.urls'
 
