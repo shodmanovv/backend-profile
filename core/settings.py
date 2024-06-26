@@ -62,16 +62,16 @@ CORS_ALLOW_HEADERS = [
 
 
 CORS_ORIGIN_WHITELIST = [
-    "https://backend-profile.vercel.app"
+    "https://backend-profile.vercel.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://backend-profile.vercel.app"
+    "https://backend-profile.vercel.app",
 
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://backend-profile.vercel.app"
+    "https://backend-profile.vercel.app",
 ]
 
 SESSION_COOKIE_DOMAIN = "https://backend-profile.vercel.app"
