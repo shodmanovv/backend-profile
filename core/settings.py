@@ -70,7 +70,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 ]
 
-CSRF_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
     "https://backend-profile.vercel.app",
 ]
 
