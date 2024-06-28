@@ -6,7 +6,7 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['id', 'categorys', 'name', 'img', 'img2', 'text', 'text2', 'created']
+        fields = ['id', 'categorys', 'name', 'img', 'img2', 'text', 'text2', 'created', 'created_format']
         ordering = ('-created',)
 
     def get_created_format(self, obj):
